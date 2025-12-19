@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1 class="logo">Meu Portfólio</h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+
+    <!-- INÍCIO -->
+    <section id="home" class="home">
+        <h2 class="typing"></h2>
+        <p>Eu construo sites modernos, responsivos e com alta performance.</p>
+
+        <button class="scrollButton" onclick="scrollToProjetos()">Ver Projetos</button>
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <h2 class="title">Sobre mim</h2>
+        <div class="sobre-container">
+            <img src="https://via.placeholder.com/200">
+            
+            <div class="texto-sobre">
+                <p>Olá! Sou um desenvolvedor apaixonado por criação de sites.
+                    Trabalho com HTML, CSS, JavaScript e procuro sempre evoluir.</p>
+
+                <button onclick="toggleSobre()" class="btnSobre">Mostrar mais+</button>
+
+                <p class="textoMais">
+                    Tenho experiência em: Frontend, UI Design e projetos pessoais.
+                    Meu objetivo é criar soluções rápidas e profissionais.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+        <h2 class="title">Meus Projetos</h2>
+
+        <div class="projetos-grid">
+
+            <div class="card">
+                <h3>Projeto 1</h3>
+                <p>Site institucional responsivo.</p>
+                <a href="#">Visitar</a>
+            </div>
+
+            <div class="card">
+                <h3>Projeto 2</h3>
+                <p>Landing page moderna com animações.</p>
+                <a href="#">Visitar</a>
+            </div>
+
+            <div class="card">
+                <h3>Projeto 3</h3>
+                <p>Sistema web com formulários.</p>
+                <a href="#">Visitar</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h2 class="title">Contato</h2>
+
+        <form onsubmit="enviarWhatsapp(); return false;">
+    <input type="text" id="nome" placeholder="Seu nome..." required>
+    <input type="email" id="email" placeholder="Seu email..." required>
+    <textarea id="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+    <button type="submit">Enviar pelo WhatsApp</button>
+</form>
+
+        <p class="confirmacao"></p>
+    </section>
+
+
+    <footer>
+        <p>© 2025 - Portfólio com JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
